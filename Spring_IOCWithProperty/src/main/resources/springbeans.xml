@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+        <beans>
+        <bean id="stud" class="com.entity.Students">
+        <property name="stud_id" value="2"></property>
+        <property name="stud_name" value="Salman"></property>
+        <property name="stud_age" value="22"></property>
+        <property name="stud_city" value="Talegaon Dabhade"></property>
+        <property name="cou" ref="c"></property>
+        </bean>
+        
+        <bean id="stud1" class="com.entity.Students">
+        <constructor-arg index="0" value="3"></constructor-arg>
+        <constructor-arg index="1" value="harshad"></constructor-arg>
+        <constructor-arg index="2" value="22"></constructor-arg>
+        <constructor-arg index="3" value="Akurdi"></constructor-arg>
+        <constructor-arg  index ="4" ref="c"></constructor-arg>
+        </bean>
+        
+        <bean id= "c" class="com.entity.Country">
+        <property name="c_id" value="91"></property>
+        <property name="c_name" value="india"></property>
+        
+        </bean>
+        
+        
+        
+        
+        </beans>
